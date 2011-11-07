@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		   xmlns:mx="library://ns.adobe.com/flex/mx" width="654" height="300"
+		   creationComplete="abrirJanela()">
+	
+	<fx:Script source="TermoAberturaComportamento.as"/>
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<mx:DataGrid x="10" y="34" height="256" id="gridTermos"
+				 doubleClickEnabled="true" doubleClick="mostrarTermo()">
+		<mx:columns>
+			<mx:DataGridColumn headerText="Descrição" dataField="descricao"/>
+			<mx:DataGridColumn headerText="Orçamento" dataField="valor"/>
+			<mx:DataGridColumn headerText="Dias" dataField="dias"/>
+		</mx:columns>
+	</mx:DataGrid>
+	
+	<mx:TextArea x="320" y="34" width="324" height="256" id="textArea"/>
+	<mx:Label x="320" y="10" text="Termo de Projeto Selecionado" fontWeight="bold"/>
+	<mx:Label x="10" y="10" text="Selecione um termo" fontWeight="bold"/>
+</mx:Canvas>
