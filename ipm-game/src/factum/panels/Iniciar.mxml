@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:fx="http://ns.adobe.com/mxml/2009"
+		   xmlns:mx="library://ns.adobe.com/flex/mx"
+		   xmlns:s="library://ns.adobe.com/flex/spark"
+		   width="400" height="300" borderColor="#020202">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>	
+	<s:Image x="0" y="0" width="100%" height="100%" 
+			 source="factum/images/Mannequin_Ambition_by_a_asi.jpg"/>
+	<mx:Label x="106" y="30" text="iPM Game" horizontalCenter="0" fontWeight="bold" fontSize="33" />
+	<s:Image y="10" width="104" source="factum/images/cubo_magico.png" horizontalAlign="right"/>
+</mx:Canvas>

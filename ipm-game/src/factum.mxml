@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+				xmlns:mx="library://ns.adobe.com/flex/mx"
+				xmlns:panels="factum.panels.*"
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				minWidth="955" minHeight="600" currentState="inicio" layout="absolute">
+
+	<fx:Script source="comportamento.as"/>
+	<mx:states>
+		<mx:State name="inicio"/>
+		<mx:State name="termoProjeto"/>
+	</mx:states>
+
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<mx:Panel y="10" width="935" height="580" layout="absolute" horizontalCenter="0">
+		<panels:Iniciar includeIn="inicio" top="32" width="788" height="484" horizontalCenter="0" textAlign="center">
+		</panels:Iniciar>
+		<mx:Button includeIn="inicio" y="180" width="100" height="30" label="Novo Jogo"
+				   click="{this.currentState = 'termoProjeto'}" fontFamily="Arial" fontSize="14"
+				   fontWeight="normal" horizontalCenter="0"/>
+		<panels:TermoAbertura includeIn="termoProjeto" x="20" y="53">
+		</panels:TermoAbertura>
+		<s:Button includeIn="inicio" y="238" width="100" height="30" label="Opções"
+				  fontFamily="Arial" fontSize="14" fontWeight="normal" horizontalCenter="0" />
+	</mx:Panel>
+</mx:Application>
