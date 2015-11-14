@@ -1,0 +1,1 @@
+Projeto de jogo interativo e colaborativo acessível via web, que simula um ambiente de problemas reais e oferece meios para solucioná-lo.
